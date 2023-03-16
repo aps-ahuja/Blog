@@ -154,6 +154,11 @@ article {
 /* responsive code */
 
 @media (max-width: 768px) {
+  .back-button{
+    font-size : 36px;
+    
+  }
+  
   h1 {
     font-size: 36px;
   }
