@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mental Health</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="back-button">&#8592;</a>
+    <div class="dark-mode-switch">
+      <input type="checkbox" id="dark-mode-toggle" class="toggle-input">
+      <label for="dark-mode-toggle" class="toggle-label"></label>
+    </div>
+  </header>
+  <main class="article-container">
+    <article>
+      <h1>Mental health in today's life in India.</h1>
+      <img src="mentalHealth.jpg" alt="renewable energy">
+      <p>Hey there! Mental health is a topic that affects us all, and that's especially true in India. With its bustling
+        cities, high-stress work environments, and cultural taboos surrounding mental health, it's no surprise that many
+        people find it difficult to talk about their mental health challenges.
+
+        But with changing times and the minds of people becoming more open-minded things are starting to change. Alot of
+        mental health speacialists or speakers have started to speak out more about the topic of mental health and even
+        the government has started to launch more initiatives regargding mental health and increase the access to their
+        resources and services.
+        <br>
+        <br>Sometimes what our society does to people is that it supresses them and blocks their desire to speak about
+        how they feel because of the old mindsets in people but there is definately a new ray of hope that we can see
+        coming
+        out in forms of alot more people starting to speak about at and working to reduce the stigma related to this
+        topic and this article will also do just that and help you see the light through the dark tunnel that sometimes
+        people are unable to see and they continue to fall back in the darkness when all they really need is someone to
+        tell them that "it is okay to not be okay" and something along the lines of "This too shall pass" which could
+        act as just the ray of hope needed to pull them out of the tunnel and save them.
+
+
+      </p>
+      <p>Mental health has been a topic of increasing concern in recent years, as more and more people around the world
+        struggle with anxiety, depression, and other mental health challenges. In India, the situation is no different,
+        and in fact, the cultural beliefs and societal expectations around mental health can make it even more difficult
+        for individuals to seek help.<br>
+
+      </p>
+
+      <p>Mental health challenges in India are complex and multifaceted, with many factors contributing to the issue.
+        One major challenge is the lack of mental health resources and infrastructure in the country. According to a
+        report by the World Health Organization, there are only 0.3 psychiatrists per 100,000 people in India, compared
+        to a global average of 1.2 psychiatrists per 100,000 people.
+        <br><br>
+
+        Additionally, cultural beliefs and stigma surrounding mental health can prevent individuals from seeking help,
+        as many people fear being ostracized or discriminated against if they reveal their struggles as we noed earlier.
+        Mental health challenges are often viewed as a personal weakness or a sign of spiritual or moral failing, rather
+        than a legitimate medical issue.
+      </p>
+
+      <p>According to a study by the National Institute of Mental Health and Neurosciences (NIMHANS), nearly 14% of
+        India's population, or about 180 million people, are in need of mental health interventions. To tackle these,
+        the government has started to take some initiatives.The Indian government has taken several steps to address
+        mental health challenges in the country. In 2018, the government launched the National Mental Health Policy,
+        which aims to provide accessible, affordable, and quality mental health care to all citizens. The policy also
+        includes provisions for mental health education and awareness-raising programs, as well as measures to improve
+        mental health research and data collection.
+        <br><br>
+
+        Beyond government initiatives, there are also many resources and programs available to support mental well-being
+        in India. Traditional practices like yoga and meditation are widely recognized as effective tools for managing
+        stress and improving mental health, and there are many centers and teachers throughout the country offering
+        these practices to individuals and communities.
+
+        But still after all of these the mental health sector in India is under-resourced and often overlooked in public
+        policy and discourse. Even when resources are available, the stigma surrounding mental health can prevent people
+        from accessing them.
+
+
+      </p>
+      <p>
+        The mental health sector in India is under-resourced and often overlooked in public policy and discourse. Even
+        when resources are available, the stigma surrounding mental health can prevent people from accessing them. It's
+        not just up to mental health professionals, though. We all have a role to play in supporting mental health. This
+        includes advocating for policies that promote mental health, creating supportive environments for those who are
+        struggling, and taking care of our own mental health.
+        <br><br>
+        If you or someone you know is struggling with mental health challenges, it is important to know that you are not
+        alone. It is okay to reach out for help and support. There are many resources available, including counseling
+        services, support groups, and helplines, that can provide assistance and guidance.
+
+        Remember, seeking help is a sign of strength, not weakness. It takes courage to acknowledge your struggles and
+        reach out for support. By taking care of your mental health, you are taking an important step towards a happier,
+        healthier life.
+      </p>
+
+      <b>
+        <p class="ending">
+          So, let us all continue to prioritize our mental well-being and encourage those around us to do the same. Let
+          us break the silence around mental health challenges and create a supportive and understanding society.
+          Together, we can make a positive difference in the lives of millions of people in India and around the world.
+        </p>
+      </b>
+    </article>
+  </main>
+  <!-- dark mode button script -->
+  <script>
+    const darkModeToggle = document.querySelector("#dark-mode-toggle");
+    const elementsToToggle = document.querySelectorAll(".dark-mode-toggleable");
+
+    darkModeToggle.addEventListener("click", () => {
+      if (document.body.classList.contains("dark-mode")) {
+        document.body.classList.remove("dark-mode");
+        elementsToToggle.forEach(element => element.classList.remove("dark-mode"));
+      } else {
+        document.body.classList.add("dark-mode");
+        elementsToToggle.forEach(element => element.classList.add("dark-mode"));
+      }
+
+      const toggleSwitch = document.querySelector('.toggle-input');
+      const toggleIcon = document.querySelector('.toggle-icon');
+
+      toggleSwitch.addEventListener('change', function () {
+        if (this.checked) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          toggleIcon.classList.add('dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+          toggleIcon.classList.remove('dark');
+        }
+      });
+
+
+    });
+
+  </script>
+</body>
+
+</html>

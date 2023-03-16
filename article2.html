@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Article Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="back-button">&#8592;</a>
+    <div class="dark-mode-switch">
+      <input type="checkbox" id="dark-mode-toggle" class="toggle-input">
+      <label for="dark-mode-toggle" class="toggle-label"></label>
+    </div>
+  </header>
+
+  <main class="article-container ">
+    <article>
+      <h1>The Importance of Financial Literacy for Young Adults</h1>
+      <img src="studying.jpg" alt="renewable energy">
+      <p>Financial literacy is an essential life skill that is often overlooked in our education system. Being
+        financially literate means having the knowledge and skills to make informed decisions about your personal
+        finances, such as budgeting, investing, and managing debt. It's a critical skill that can help individuals
+        achieve financial stability, independence, and success. Unfortunately, studies have shown that many individuals,
+        especially young adults, lack basic financial knowledge, which can have negative consequences on their financial
+        future.
+        <br>
+        <br>
+        We believe that the young adults in today's day and age are not totally literate in the stream of finacial
+        education because of a number of reasons like the fact that many schools do not offer financial education
+        courses or only offer them as electives, which means that not all students receive the same level of financial
+        education. This can result in young adults lacking the necessary financial knowledge and skills to make informed
+        financial decisions.Young adults today face unique challenges when it comes to financial literacy, such as the
+        rise in student loan debt, a changing job market, and increasing living costs. These challenges can make it
+        difficult for young adults to achieve financial stability and may contribute to a lack of financial literacy.
+
+        <br>
+        <br>
+        In today's culture with the ease of access to credit cards and loans, young adults may not fully understand the
+        consequences of using credit and the impact it can have on their financial future. Without proper education,
+        young adults may fall into debt and struggle to manage their finances effectively.
+        Many young adults may not have access to financial role models or mentors who can guide them and teach them
+        about financial literacy. This can make it difficult for young adults to learn about personal finance and make
+        informed financial decisions.
+
+      </p>
+      <p>While technology has made it easier to manage finances, it can also contribute to a lack of financial literacy.
+        Young adults may rely too heavily on technology to manage their finances and may not fully understand the
+        financial concepts behind the tools they are using.
+        Financial literacy provides with the knowledge and skills to make informed decisions about their finances, which
+        can help them achieve financial stability in the future. This can include things like saving for retirement,
+        building an emergency fund, and investing wisely. Children, adolescents or even alot of adults these days may be
+        vulnerable to making financial mistakes, such as taking on too much debt, overspending, or falling for financial
+        scams. Financial literacy can help prevent these mistakes by teaching them about the risks and consequences of
+        certain financial decisions.</p>
+
+      <p>
+        After considering some of the arguments against financial literacy being mandatory, it's important to
+        also acknowledge the efforts being made to improve financial education, especially for young adults. While there
+        are still concerns regarding the effectiveness and accessibility of financial education, statistics show that
+        progress is being made in certain areas. For example, there has been an increase in the percentage of high
+        school students who received financial education in school, and more states in the United States are requiring
+        students to take a course in personal finance before graduating. Additionally, some studies have found that more
+        young adults are demonstrating high levels of financial literacy compared to a few years ago. These statistics
+        suggest that efforts to improve financial education are having some positive impact, but there is still more
+        work to be done to ensure that all young adults have access to the necessary financial knowledge and skills to
+        make informed decisions about their finances.
+        <br><br>
+        1. According to a survey conducted by the National Endowment for Financial Education, the percentage of high
+        school
+        students who received financial education in school increased from 48% in 2007 to 63% in 2019.
+        <br><br>
+        2. A 2020 survey by Junior Achievement USA found that 79% of teens surveyed reported having learned about money
+        management from their parents or guardians.
+        <br><br>
+        3. The 2018 Financial Capability Study by the FINRA Investor Education Foundation found that 27% of young adults
+        ages 18 to 24 demonstrated high levels of financial literacy, an increase from 18% in 2009.
+        <br><br>
+        4. A 2018 survey by the Council for Economic Education found that 61% of states in the United States require
+        students to take a course in personal finance before graduating high school, an increase from 21% in 2009.
+        
+
+      </p>
+
+      <!-- <p>
+        <br>
+
+
+      </p>
+      <p>
+      </p> -->
+
+      <b>
+        <p>
+          In conclusion, financial literacy is an essential life skill that can have a significant impact on an
+          individual's financial stability, independence, and success. While there are some counterarguments against
+          making financial literacy mandatory, the evidence suggests that efforts to improve financial education are
+          having a positive impact, particularly among young adults. Nevertheless, there is still much work to be done
+          to ensure that financial education is accessible, effective, and comprehensive, so that everyone has the tools
+          they need to manage their finances effectively. It's crucial that we continue to prioritize financial
+          education in our schools and communities and work together to develop innovative and effective ways to promote
+          financial literacy for all. With the right knowledge and skills, individuals can take control of their
+          finances and achieve their financial goals, improving their lives and those of their families and communities.
+        </p>
+      </b>
+    </article>
+  </main>
+  <!-- dark mode button script -->
+  <script>
+    const darkModeToggle = document.querySelector("#dark-mode-toggle");
+
+    darkModeToggle.addEventListener("click", () => {
+      if (document.body.classList.contains("dark-mode")) {
+        document.body.classList.remove("dark-mode");
+        elementsToToggle.forEach(element => element.classList.remove("dark-mode"));
+      } else {
+        document.body.classList.add("dark-mode");
+        elementsToToggle.forEach(element => element.classList.add("dark-mode"));
+      }
+
+      const toggleSwitch = document.querySelector('.toggle-input');
+
+      toggleSwitch.addEventListener('change', function () {
+        if (this.checked) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          toggleIcon.classList.add('dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+          toggleIcon.classList.remove('dark');
+        }
+      });
+
+
+    });
+
+  </script>
+</body>
+
+</html>

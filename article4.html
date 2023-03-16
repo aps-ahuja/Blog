@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Article Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="back-button">&#8592;</a>
+    <div class="dark-mode-switch">
+      <input type="checkbox" id="dark-mode-toggle" class="toggle-input">
+      <label for="dark-mode-toggle" class="toggle-label"></label>
+    </div>  </header>
+  <main class="article-container">
+    <article >
+      <h1>Renewable energy in India.</h1>
+      <img src="windmill.jpg" alt="renewable energy">
+      <p>Renewable energy has emerged as one of the most promising sectors in India, with the country setting ambitious
+        targets to increase its renewable energy capacity. India's energy mix is currently dominated by coal, which has
+        led to high levels of pollution and contributed to climate change. The government's focus on renewable energy is
+        aimed at reducing the country's dependence on fossil fuels and mitigating the impacts of climate change.
+
+        India's renewable energy sector has grown rapidly over the past few years, with solar and wind power leading the
+        way. The country has set a target of achieving 175 GW of renewable energy capacity by 2022, which includes 100
+        GW of solar power, 60 GW of wind power, 10 GW of biomass power, and 5 GW of small hydropower. As of January
+        2022, India had a total renewable energy capacity of around 100 GW, which includes 41 GW of solar power, 39 GW
+        of wind power, and 9 GW of biomass and small hydropower.
+        <br>
+        <br>Solar power is the fastest-growing source of renewable energy in India, with the country adding around 15 GW
+        of solar capacity in 2021 alone. The government's initiatives, such as the KUSUM scheme, have helped to promote
+        the use of solar power in the agriculture sector, while other schemes such as the rooftop solar program have
+        encouraged the adoption of solar power in the residential and commercial sectors.
+
+        Wind power is another significant contributor to India's renewable energy mix, with the country having a total
+        wind power capacity of around 39 GW as of January 2022. The government's efforts to promote wind power include
+        the Wind Energy Programme and the Wind-Solar Hybrid Programme, which aim to increase the share of wind power in
+        India's energy mix.
+
+        Apart from solar and wind power, India is also focusing on other sources of renewable energy, such as biomass
+        and small hydropower. Biomass power involves the conversion of organic matter, such as agricultural waste, into
+        energy, while small hydropower refers to the generation of electricity using the flow of water in small rivers
+        and streams. India has a total biomass power capacity of around 9 GW and a small hydropower capacity of around 4
+        GW as of January 2022.
+      </p>
+      <p>The Indian government's push towards renewable energy has also attracted significant investment from domestic and international players. Several global companies such as SoftBank, Total, and Goldman Sachs have invested in India's renewable energy sector, while domestic players such as Adani Green Energy, Tata Power, and ReNew Power have emerged as leading players in the sector. <br>
+
+        While India's renewable energy sector has made significant progress, there are still several challenges that need to be addressed. The intermittency of renewable energy sources, such as solar and wind power, remains a key challenge, as does the issue of grid integration. The availability of financing for renewable energy projects is also a concern, particularly for small and medium-sized enterprises.</p>
+        
+        <p>One of the key drivers of India's renewable energy sector has been the decreasing cost of renewable energy technology. The cost of solar and wind power has fallen significantly over the past few years, making it increasingly competitive with conventional sources of energy. This has led to a surge in investment in the sector, with both domestic and international investors showing interest in India's renewable energy market. <br><br>
+
+          Another important factor in India's renewable energy growth has been the government's push towards energy security. India is heavily dependent on oil imports, which have significant geopolitical risks and contribute to a trade deficit. Renewable energy offers a way to reduce the country's dependence on fossil fuels and improve energy security.</p>
+
+        <p>The government's focus on renewable energy has also created significant employment opportunities. The sector has the potential to create millions of jobs, particularly in rural areas where there is a significant need for employment. According to a report by the Council on Energy, Environment and Water (CEEW) and the Natural Resources Defense Council (NRDC), the renewable energy sector in India could create 330,000 direct jobs and 1.2 million indirect jobs by 2022.
+          <br>
+
+          India's renewable energy sector has also contributed significantly to reducing greenhouse gas emissions. According to a report by the International Energy Agency (IEA), India's renewable energy growth has led to a reduction of 4% in the country's carbon dioxide emissions in 2020.</p>
+          <p>However, despite the progress made, there are still several challenges that need to be addressed to achieve India's renewable energy targets. One of the key challenges is the lack of adequate grid infrastructure, which can limit the growth of renewable energy sources. There is also a need to address the issue of energy storage, which is critical for the integration of intermittent sources of energy such as solar and wind power into the grid.
+          </p>
+
+        <b> <p class="ending">
+            In conclusion, India's renewable energy sector has made significant progress in recent years, driven by government initiatives, decreasing technology costs, and the need for energy security. The sector has the potential to create significant employment opportunities and reduce greenhouse gas emissions. However, there are still several challenges that need to be addressed, and the government and industry players need to work together to overcome these challenges and achieve India's ambitious renewable energy targets.
+          </p></b>
+    </article>
+  </main>
+    <!-- dark mode button script -->
+    <script>
+      const darkModeToggle = document.querySelector("#dark-mode-toggle");
+      const elementsToToggle = document.querySelectorAll(".dark-mode-toggleable");
+  
+      darkModeToggle.addEventListener("click", () => {
+        if (document.body.classList.contains("dark-mode")) {
+          document.body.classList.remove("dark-mode");
+          elementsToToggle.forEach(element => element.classList.remove("dark-mode"));
+        } else {
+          document.body.classList.add("dark-mode");
+          elementsToToggle.forEach(element => element.classList.add("dark-mode"));
+        }
+  
+        const toggleSwitch = document.querySelector('.toggle-input');
+        const toggleIcon = document.querySelector('.toggle-icon');
+  
+        toggleSwitch.addEventListener('change', function () {
+          if (this.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            toggleIcon.classList.add('dark');
+          } else {
+            document.documentElement.removeAttribute('data-theme');
+            toggleIcon.classList.remove('dark');
+          }
+        });
+  
+  
+      });
+  
+    </script>
+</body>
+
+</html>
